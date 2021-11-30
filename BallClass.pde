@@ -1,7 +1,6 @@
 //Global Variables
 Ball b1;
 Ball b2;
-Ball b3;
 
 //Setup Method
 public void setup()
@@ -10,7 +9,6 @@ public void setup()
   background(120);
   b1 = new Ball();
   b2 = new Ball();
-  b3 = new Ball(5, 80);
 }
 
 //Draw Method
@@ -23,9 +21,6 @@ public void draw()
   b2.update();
   b2.drawBall();
   b2.checkEdges();
-  b3.update();
-  b3.drawBall();
-  b3.checkEdges();
 }
 
 public class Ball
